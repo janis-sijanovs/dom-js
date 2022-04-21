@@ -1,0 +1,49 @@
+.card {
+    background-color: $primary;
+    padding: 40px;
+    margin: 50px 170px;
+    border-radius: 20px;
+    display: flex;
+    gap: 70px;
+}
+
+.card__content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.card__heading {
+    margin-bottom: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: $text-dark;
+}
+
+.card__img-container {
+    position: relative;
+    width: 200%;
+}
+
+.card__img {
+    width: -webkit-fill-available;
+}
+
+@media screen and (max-width: 1600px) {
+    .card {
+        flex-direction: column;
+        width: auto;
+        margin: 0;
+        align-self: center;
+    }
+
+    .card__img {
+        width: 100%;
+    }
+
+    .card__img-container {
+        width: 100%;
+    }
+}

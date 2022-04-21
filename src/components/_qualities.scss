@@ -1,0 +1,70 @@
+.qualities-card {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    padding: 122px 50px 50px;
+    margin-top: 110px;
+    position: relative;
+    filter: drop-shadow(0 10px 60px rgba(38, 45, 118, 0.08));
+    border-radius: 20px;
+}
+
+.quality-card-container {
+    margin: 0 100px;
+    display: flex;
+    gap: 60px;
+    text-align: center;
+}
+
+.qualities-card__icon {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EE5060;
+    color: $white;
+    filter: drop-shadow(0 10px 40px rgba(54, 61, 136, 0.06));
+    border-radius: 50%;
+    padding: 30px;
+    font-size: 40px;
+}
+
+.qualities-card__icon--yellow {
+    background-color: $primary;
+}
+
+.qualities-card__icon--brown {
+    background-color: #AF6C2C;
+}
+
+.qualities-card__heading {
+    font-weight: 500;
+    font-size: 30px;
+    color: $dark-red;
+}
+
+.qualities-card__description {
+    font-size: 20px;
+    color: $text-medium-dark;
+}
+
+@media screen and (max-width: 1500px) {
+    .qualities-card {
+        gap: 20px;
+        padding: 75px 10px 10px;
+    }
+
+    .quality-card-container {
+        gap: 20px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .quality-card-container {
+        flex-direction: column;
+    }
+}
